@@ -2,18 +2,17 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ build active file",
+            "label": "gcc_compaile",
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "main.cpp",
+                "sub.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out",
-                // "-std=c++11","`pkg-config","--cflags","--libs", "opencv`"
-                // "$(pkg-config --cflags opencv4)"
                 "-I/usr/include/opencv4",
-                "-lopencv_core", 
+                "-lopencv_core",
                 "-lopencv_highgui",
                 "-lopencv_imgproc"
             ],
