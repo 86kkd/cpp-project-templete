@@ -4,8 +4,11 @@ project(hello_world)
 
 add_executable(hello_world main.cpp)
 
+# compile the custom obj
 add_library(sub sub.cpp)
 # add_subdirectory(sub)
+
+# link the system obj and custom obj
 target_link_libraries(hello_world PUBLIC sub
                      "/usr/lib/libopencv_core.so"
                      "/usr/lib/libopencv_highgui.so"
