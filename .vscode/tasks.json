@@ -10,8 +10,12 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out",
-                "-I/usr/include/opencv4"
+                // "-std=c++11","`pkg-config","--cflags","--libs", "opencv`"
                 // "$(pkg-config --cflags opencv4)"
+                "-I/usr/include/opencv4",
+                "-lopencv_core", 
+                "-lopencv_highgui",
+                "-lopencv_imgproc"
             ],
             "options": {
                 "cwd": "${fileDirname}"

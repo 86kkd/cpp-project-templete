@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "videostab.hpp": "c"
+        "videostab.hpp": "c",
+        "iostream": "cpp"
     }
 }
