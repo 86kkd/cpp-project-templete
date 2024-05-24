@@ -79,5 +79,7 @@
             "binaryPath": "/home/linda/Documents/c_project/main",
             "binaryArgs": []
         }
-    ]
+    ],
+    "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild",
+    "C_Cpp.default.compileCommands": "/home/linda/Documents/c_project/builddir/compile_commands.json"
 }
